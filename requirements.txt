@@ -1,0 +1,7 @@
+replicate
+
+gunicorn
+
+flask
+
+requests
