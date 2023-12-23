@@ -15,7 +15,7 @@ def index():
         {"version": "db21e45d3f7023abc2a46ee38a23973f6dce16bb082a930b0c49861f96d1e5bf","input": { "prompt": q }}
         )
         output = requests.post('https://api.replicate.com/v1/predictions',data=body,headers=headers)
-        time.sleep(10)
+        time.sleep(15)
         get_url = output.json()['urls']['get']
         get_result = requests.post(get_url,headers=headers).json()['output']
         print(get_result)
